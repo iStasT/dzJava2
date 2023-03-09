@@ -1,16 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 20100;
-        int b = 0;
+        int initialBalance = 300;
+        int addend = 1200;
 
-        if (a >= 1000) {
-            b = a / 100;
-            a = a + b;
-
+        int bonus = 0;
+        if (addend > 1000) {
+            bonus = addend / 100;
         }
-
-        System.out.println(a);
-
-
+        int finalBalance = initialBalance + addend + bonus;
+        System.out.println("Итоговый баланс:" + finalBalance);
+        System.out.println("Бонусы: " + bonus);
     }
 }
